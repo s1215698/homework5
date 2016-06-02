@@ -16,13 +16,34 @@ int main()
 		
 			if(choose_time==1)
 			{
-				
+					int a=1,b=1;
 					printf("-------選擇平日中午計價方式-------\n");
-					printf("大人人數：");
-					scanf("%d",&adult);
-					printf("小孩人數：");
-					scanf("%d",&child);
-				
+					while(a==1)
+					{
+						printf("大人人數：");
+						scanf("%d",&adult);
+						if(adult>=0)
+						{
+							a=0;
+						}
+						else
+						{
+							printf("人數須大於0\n");
+						}
+					}
+					while(b==1)
+					{
+						printf("小孩人數：");
+						scanf("%d",&child);
+						if(child>=0)
+						{
+							b=0;
+						}
+						else
+						{
+							printf("人數須大於0\n");
+						}
+					}
 					total = adult + child;
 					int free;
 					free = total/3;
@@ -144,10 +165,34 @@ int main()
 			else if(choose_time==2)
 			{	
 					printf("-------選擇平日晚上、例假日計價方式-------\n");
-					printf("大人人數：");
-					scanf("%d",&adult);
-					printf("小孩人數：");
-					scanf("%d",&child);
+					int a=1,b=1;
+				
+					while(a==1)
+					{
+						printf("大人人數：");
+						scanf("%d",&adult);
+						if(adult>=0)
+						{
+							a=0;
+						}
+						else
+						{
+							printf("人數須大於0\n");
+						}
+					}
+					while(b==1)
+					{
+						printf("小孩人數：");
+						scanf("%d",&child);
+						if(child>=0)
+						{
+							b=0;
+						}
+						else
+						{
+							printf("人數須大於0\n");
+						}
+					}
 				
 					total = adult + child;
 					int free;
